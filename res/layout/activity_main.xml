@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.cloud4family.activities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity" >
+    
+    <com.cloud4family.activities.customview.LovelyView 
+        android:id="@+id/lovelyView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:leftLabel="left TextField"
+        custom:leftLabelStyle="@style/leftTextStyle"
+        custom:rightLabel="Right TextField"
+        custom:rightLabelStyle="@style/rightTextStyle"/>
+    
+    <com.cloud4family.activities.customview.LovelyView 
+        android:id="@+id/lovelyView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:leftLabel="Hello Mr:"
+        custom:leftLabelStyle="@style/leftTextStyle"
+        custom:rightLabel=" Whats up Buddy !"
+        custom:rightLabelStyle="@style/rightTextStyle"/>
+    
+</LinearLayout>
